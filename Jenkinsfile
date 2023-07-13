@@ -2,7 +2,7 @@
 pipeline {
     agent any
     stages {
-        stage("Build tag") {
+        stage("Build changereq") {
             when {
                 changeRequest()
             }
