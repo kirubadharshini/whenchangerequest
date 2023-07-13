@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage("Build changereq") {
             when {
-                changeset "*.js"
+                changeset "*.jst"
             }
             steps {
-                echo "hi"
+                echo "hi there is no jst file"
             }
         }
     }
