@@ -1,10 +1,9 @@
-
 pipeline {
     agent any
     stages {
         stage("Build changereq") {
             when {
-                changeRequest()
+                changeset glob: *.js*
             }
             steps {
                 echo "hi"
